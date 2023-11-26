@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HCI Web Portfolio W5 CSS Layout </title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                padding: 10px;
+                background: #37a7f2;
+            }
+
+            .header {
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+
+            .bar {
+                background-color: #333;
+                padding: 14px 16px;
+                
+            }
+
+            .portfolio {
+                float: left;
+                place-items: center;
+                display: grid;
+                text-align: center;   
+            }
+
+            .section2a, .section2b, .section2c, .section2d, .section2e, .section2f, .section2g, .section2h {
+                background-color: rgb(247, 246, 246);
+                border: 1px solid rgb(58, 58, 58);
+                padding: 15px;
+                min-width: 50%;
+                float: left;
+            }
+
+            .profilemini {
+                float:left;
+                width: 50%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .img {
+                padding: 20px;
+                max-width: 480px;
+            }
+
+            .contours {
+                background-color: white;
+                padding: 30px;
+                margin-top: 20px;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: white;
+                margin-top: 20px;
+            }
+
+            @media screen and (min-width: 901px){
+                .portfolio {
+                    width: 60%;
+                }
+
+                .profilemini {
+                    width: 40%;
+                }
+
+                .img {
+                    width: 100%;
+                }
+
+                
+                
+            }
+
+            @media screen and (max-width: 900px) {
+                .portfolio {
+                    width: 60%;
+                }
+
+                .profilemini {
+                    width: 40%;
+                }
+
+                .img {
+                    width: 100%;
+                }
+
+                
+            }
+
+            @media screen and (max-width: 745px) {
+                .portfolio {
+                    width: 100%;
+                }
+
+                .profilemini {
+                    width: 100%;
+                }
+
+                .img {
+                    width: 100%;
+                }
+                }               
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>HCI Assignment</h1>
+            <p> Web Portfolio - CSS Layout</p>
+        </div>
+
+        <div class="bar"></div>
+
+        <div class="row">
+            <div class="portfolio">
+                <div class="contours">
+                    <h2>Portfolio</h2>
+                    <div class="section2a">
+                        <h4 style="text-align: center;"> Major</h4>
+                        <p style="text-align: center;"> Computer Science</p>
+                    </div>
+                    <div class="section2b">
+                        <h4 style="text-align: center;"> Programming Skills</h4>
+                        <p style="text-align: center;"> Java & Python</p>
+                    </div>
+                    <div class="section2c">
+                        <h4 style="text-align: center;"> Hobby</h4>
+                        <p style="text-align: center;"> Sleeping</p>
+                    </div>
+                    <div class="section2d">
+                        <h4 style="text-align: center;"> Interest</h4>
+                        <p style="text-align: center;"> Exploring</p>
+                    </div>
+                    <div class="section2e">
+                        <h4 style="text-align: center;">Elementary School</h4>
+                        <p style="text-align: center;"> Enrico Solito</p>
+                    </div>
+                    <div class="section2f">
+                        <h4 style="text-align: center;"> Middle School</h4>
+                        <p style="text-align: center;"> Ettore Romagnoli</p>
+                    </div>
+                    <div class="section2g">
+                        <h4 style="text-align: center;"> High School</h4>
+                        <p style="text-align: center;"> ITC Luigi Sturzo - BIS</p>
+                    </div>
+                    <div class="section2h">
+                        <h4 style="text-align: center;"> Favourite</h4>
+                        <p style="text-align: center;"> Chocolate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profilemini">
+                <div class="contours">
+                    <h2>Profile</h2>
+                    <img class="img" src="HCI_Assignment_1-Web_portfolio_images/a1906503-b15a-413d-a504-3f0638f169e3.jpg" title="Angelo Cascino's photo profile">
+                    <br>
+                    <a href="profile-details.html"> Click here for more details</a>
+                </div>
+            </div>
+            <div class="">
+                
+            </div>            
+        </div>
+        <div class="footer">
+            <h2>2023 Binus University</h2>
+        </div>
+    </body>
+</html>
